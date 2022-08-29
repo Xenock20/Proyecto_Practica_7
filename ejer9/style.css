@@ -1,0 +1,74 @@
+:root{
+  --fondo: #2C3639;
+  --color: #DCD7C9;
+  --form-color: #3F4E4F;
+  --button-color: #A27B5C;
+  --button-color-hover: #AB7952;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: var(--fondo);
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--color);
+}
+
+form{
+  background-color: var(--form-color);
+  width: 50vw;
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -15px 15px 5px black;
+}
+
+input[type="text"]{
+  width: 250px;
+  padding: 10px;
+  margin: 25px 0px;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+input[type="submit"]{
+  background-color: var(--button-color);
+  color: var(--color);
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  transition: all 0.1s;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover{
+  background-color: var(--button-color-hover);
+}
+
+input[type="submit"]:active{
+  background-color: var(--color);
+  color: var(--button-color);
+}
+
+.verde{
+  color: green;
+}
+
+span{
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.reiniciar{
+  visibility: hidden;
+}
